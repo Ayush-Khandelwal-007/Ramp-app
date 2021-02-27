@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7F16A"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/text_display"
+        android:layout_width="250dp"
+        android:layout_height="53dp"
+        android:background="#07FAF2"
+        android:onClick="showMessage"
+        android:text="@string/display_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.104" />
+
+    <Button
+        android:id="@+id/increase_count"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="37dp"
+        android:background="#FF175C"
+        android:text="@string/Increase"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Decrease_count"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="countUp" />
+
+    <Button
+        android:id="@+id/Decrease_count"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="37dp"
+        android:background="#FF175C"
+        android:text="@string/Decrease"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/increase_count"
+        android:onClick="countDown" />
+
+    <TextView
+        android:id="@+id/Count_Display"
+        android:layout_width="153dp"
+        android:layout_height="207dp"
+        android:background="#86E965B3"
+        android:gravity="center|center_vertical"
+        android:text="@string/Initial_count"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textIsSelectable="true"
+        android:textSize="160sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_display"
+        app:layout_constraintVertical_bias="0.32999998" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ramp</string>
+    <string name="display_text">Display Text</string>
+    <string name="Increase">Increase</string>
+    <string name="Decrease">Decrease</string>
+    <string name="Initial_count">0</string>
+    <string name="Button_message">"You Pressed the useless button"</string>
+    <string name="Negative_Value_message">Can\'t have value less than 0</string>
+</resources>
